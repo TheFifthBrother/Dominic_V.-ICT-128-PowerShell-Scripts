@@ -3,7 +3,7 @@ $Items = Get-ChildItem -File
 $number = 0
 
 foreach ($Item in $Items) {
-    $NewName = "(" + [String]$number + ") " + $Item.Name
+    $NewName = $Item.Name
     Rename-Item -Path $Item.Name -Newname $NewName
     $number++
 }
