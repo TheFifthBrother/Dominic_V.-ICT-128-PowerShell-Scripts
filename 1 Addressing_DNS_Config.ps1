@@ -3,13 +3,25 @@
 #.MODIFID: Saturday, April 13
 <#
 .SYNOPSIS
-Default Virtaul Machine Setup
+Wizard for Static IP Address setup on a computer
 
 .DESCRIPTION
-Takes in the VM name and creates that name as well as creates the Hard Drive used with the same name
+Takes in the VM name and prompts you for IP configuration
 
 .PARAMETER Number 1
-Takes in Virtual Machine Name
+Takes in Computer Name
+
+.PARAMETER Number 2
+Static IP address for computer
+
+.PARAMETER Number 3
+Prefix for IP address
+
+.PARAMETER Number 4
+Default Gateway
+
+.PARAMETER Number 5
+List of Domain Controllers 
 
 .EXAMPLE
 Name of your Virtual Machine? : Example_PC
