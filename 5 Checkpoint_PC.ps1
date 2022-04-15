@@ -16,7 +16,7 @@ What Would you like to Name your Checkpoint? BeforeTypeofConfiguration
 #>
 
 #Prompts you to name your checkpoint 
-$info = Write-Host What Would you like to Name your Checkpoint? 
+$info = Read-Host What Would you like to Name your Checkpoint? 
 
 #Creates the check point based off of what you named it
 Checkpoint-Computer -Description $info -RestorePointType "Modify_Settings" 
